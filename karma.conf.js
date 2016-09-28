@@ -19,8 +19,8 @@ module.exports = function(config) {
             "node_modules/angular-mocks/angular-mocks.js",
             "components/!(*.spec).js",
             "components/*.spec.js",
-            "main.js",
-            "main.spec.js"
+            "index.js",
+            "index.spec.js"
         ],
 
 

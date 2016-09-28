@@ -1,0 +1,47 @@
+#preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #444444;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+#preloader.hide {
+    opacity: 0;
+}
+
+#preloader-logo {
+    position: absolute;
+    left: 0;
+    align-self: flex-start;
+    font-size: 20px;
+    color: #FFC107;
+    padding: 30px;
+    text-shadow: 0 0 12px, 0 0 8px;
+}
+
+#preloader-progress {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    background: url("../gfx/progress.jpg");
+    background-size: cover;
+    box-shadow: 0 0 30px #000, 0 0 30px #000;
+    transition: box-shadow 2s;
+    overflow: hidden;
+}
+
+#preloader-progress-shadow {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 76, 16, 0.8);
+    transition: left 0.4s ease-out;
+}
+
+#preloader-progress.animate {
+    box-shadow: 0 0 175px #FFC107,  0 0 100px #FFC107;
+}

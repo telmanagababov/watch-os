@@ -1,4 +1,7 @@
-#wrapper {
+html, body {
     margin: 0;
+    width: 800px;
+    height: 600px;
     background: #e8e0e7;
+    overflow: hidden;
 }
