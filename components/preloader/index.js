@@ -1,7 +1,11 @@
-angular.module("watchos").component("preloader", {
-    templateUrl: "./components/preloader/template/preloaderTemplate.html",
-    controller: PreloaderController,
+import PreloadController from "./controller/PreloaderController.js";
+
+const PreloaderComponent = {
+    templateUrl: "templates/preloaderTemplate.tmpl",
+    controller: PreloadController,
     bindings: {
         version: "<"
     }
-});
+};
+
+export default PreloaderComponent;

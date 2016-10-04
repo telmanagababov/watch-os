@@ -1,6 +1,11 @@
-angular.module("watchos").component("content", {
-    templateUrl: "./components/content/template/contentTemplate.html",
+import ContentController from "./controller/ContentController";
+
+const ContentComponent = {
+    templateUrl: "templates/contentTemplate.tmpl",
     controller: ContentController,
     bindings: {
+        version: "<"
     }
-});
+};
+
+export default ContentComponent;

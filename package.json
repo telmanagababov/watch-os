@@ -1,36 +1,36 @@
 {
   "name": "watch-os",
   "version": "1.0.0",
-  "description": "javascript based OS",
-  "main": "index.html",
+  "description": "angular 1.5",
+  "main": "index.js",
   "scripts": {
-    "lint": "eslint ./",
-    "test": "test"
+    "start": "gulp"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/telmanagababov/watch-os.git"
-  },
-  "keywords": [
-    "os"
-  ],
-  "author": "tagababov",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/telmanagababov/watch-os/issues"
-  },
-  "homepage": "https://github.com/telmanagababov/watch-os#readme",
+  "author": "",
+  "license": "Apache 2.0",
   "dependencies": {
-    "angular": "^1.5.8"
+    "angular": "^1.5.0"
   },
   "devDependencies": {
-    "angular-mocks": "^1.5.8",
-    "eslint": "^3.5.0",
-    "eslint-config-google": "^0.6.0",
-    "jasmine": "^2.5.2",
-    "karma": "^1.3.0",
-    "karma-chrome-launcher": "^2.0.0",
-    "karma-jasmine": "^1.0.2",
-    "karma-phantomjs-launcher": "^1.0.2"
+    "babel-plugin-external-helpers": "^6.8.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-es6-transpiler": "^1.0.2",
+    "grunt-rollup": "^0.8.0",
+    "grunt-traceur": "^0.5.5",
+    "load-grunt-tasks": "^3.5.2",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-multi-entry": "^2.0.1",
+    "traceur": "0.0.111",
+    "traceur-runtime": "0.0.59"
   }
 }
