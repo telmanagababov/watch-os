@@ -7,7 +7,8 @@ module.exports = {
     globals: {
         module: true,
         angular: true,
-        inject: true
+        inject: true,
+        Promise: true
     },
     env: {
         browser: true,

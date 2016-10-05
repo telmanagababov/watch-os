@@ -4,7 +4,8 @@ const ContentComponent = {
     templateUrl: "templates/contentTemplate.tmpl",
     controller: ContentController,
     bindings: {
-        version: "<"
+        version: "<",
+        loading: "<"
     }
 };
 

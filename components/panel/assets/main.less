@@ -1,0 +1,45 @@
+#panel {
+    position: absolute;
+    bottom: 45px;
+    margin: 0 80px;
+    height: 80px;
+    width: 600px;
+    padding: 0 20px;
+    border-radius: 8px;
+    background: #e8e0e7;
+    box-shadow: #777777 0 0 4px, #777777 0 0 2px;
+
+    .option {
+        width: 80px;
+        height: 80px;
+        margin: -20px 8px;
+        display: inline-block;
+        background-size: cover;
+        box-shadow: #777 0 8px 10px -8px;
+        cursor: pointer;
+        transition: transform 0.25s;
+    }
+    .option:hover {
+        transform: translate(0, -8px);
+        box-shadow: #777 0 22px 12px -20px;
+    }
+
+    #browser-option {
+        background-image: url(browser-option.png);
+    }
+    #file-option {
+        background-image: url(file-option.png);
+    }
+    #folder-option {
+        background-image: url(folder-option.png);
+    }
+    #settings-option {
+        background-image: url(settings-option.ico);
+    }
+    #game-option {
+        background-image: url(game-option.png);
+    }
+    #youtube-option {
+        background-image: url(youtube-option.png);
+    }
+}

@@ -4,7 +4,8 @@ const PreloaderComponent = {
     templateUrl: "templates/preloaderTemplate.tmpl",
     controller: PreloadController,
     bindings: {
-        version: "<"
+        version: "<",
+        onLoadingChange: "&"
     }
 };
 
