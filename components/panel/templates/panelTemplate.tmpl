@@ -1,8 +1,8 @@
-<div id="panel" ng-hide="$ctrl.loading">
-    <div id="folder-option" class="option"></div>
-    <div id="file-option" class="option"></div>
-    <div id="game-option" class="option"></div>
-    <div id="browser-option" class="option"></div>
-    <div id="youtube-option" class="option"></div>
-    <div id="settings-option" class="option"></div>
+<div id="panel" data-ng-hide="$ctrl.loading">
+    <div id="folder-option" class="option" data-ng-click="$ctrl.addFolder()"></div>
+    <div id="file-option" class="option" data-ng-click="$ctrl.addFile()"></div>
+    <div id="game-option" class="option" data-ng-click="$ctrl.addGame()"></div>
+    <div id="browser-option" class="option" data-ng-click="$ctrl.openBrowser()"></div>
+    <div id="youtube-option" class="option" data-ng-click="$ctrl.openYoutube()"></div>
+    <div id="settings-option" class="option" data-ng-click="$ctrl.openSettings()"></div>
 </div>

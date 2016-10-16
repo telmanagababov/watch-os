@@ -45,10 +45,14 @@ module.exports = function (grunt) {
         
         watch: {
             development: {
+                files: ["index.js", "index.html", "components/**/*"],
+                tasks: ["default"]
+            },
+            js: {
                 files: ["index.js", "components/**/*.js"],
                 tasks: ["rollup"]
             },
-            less: {
+            css: {
                 files: ["assets/**/*.less", "components/**/*.less"],
                 tasks: ["less"]
             },

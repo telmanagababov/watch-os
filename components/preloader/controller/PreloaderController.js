@@ -13,6 +13,9 @@ class PreloaderController {
 
     constructor($scope) {
         this.$scope = $scope;
+        this.preloader = null;
+        this.progressBar = null;
+        this.animating = false;
     }
 
     $onInit() {

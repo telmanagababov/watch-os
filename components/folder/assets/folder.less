@@ -1,0 +1,27 @@
+.folder {
+    transition: transform 0.25s;
+
+    &:hover {
+        height: 106px;
+        transform: translate(0, -8px);
+        box-shadow: #777 0 20px 8px -18px;
+    }
+
+    .folder-content {
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        background-size: cover;
+        background-image: url(folder-item.png);
+        box-shadow: #777 0 30px 8px -8px;
+    }
+
+    .caption {
+        width: 80px;
+        padding: 2px;
+        box-sizing: border-box;
+        border: 1px solid #777;
+        border-radius: 4px;
+        text-align: center;
+    }
+}

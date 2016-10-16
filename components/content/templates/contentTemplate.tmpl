@@ -1,2 +1,13 @@
 <div id="content" ng-hide="$ctrl.loading">
+    <div id="items-container">
+        <div data-ng-repeat="folder in $ctrl.items.folders track by $index" class="item">
+            <folder caption="folder"></folder>
+        </div>
+        <div data-ng-repeat="file in $ctrl.items.files track by $index" class="item">
+            <file caption="file"></file>
+        </div>
+        <div data-ng-repeat="game in $ctrl.items.games track by $index" class="item">
+            <game caption="game"></game>
+        </div>
+    </div>
 </div>
