@@ -4,7 +4,8 @@ const FolderComponent = {
     templateUrl: "templates/folderTemplate.tmpl",
     controller: FolderController,
     bindings: {
-        caption: "<"
+        caption: "<",
+        onRemove: "&"
     }
 };
 

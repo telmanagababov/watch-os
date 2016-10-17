@@ -4,7 +4,8 @@ const FileComponent = {
     templateUrl: "templates/fileTemplate.tmpl",
     controller: FileController,
     bindings: {
-        caption: "<"
+        caption: "<",
+        onRemove: "&"
     }
 };
 

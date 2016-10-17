@@ -1,3 +1,5 @@
+import localStorage from "./../../../utils/LocalStorage";
+
 class PanelController {
 
     constructor() {
@@ -11,14 +13,17 @@ class PanelController {
 
     addFolder() {
         this.folders.push("new folder");
+        localStorage.setItems(this.items);
     }
 
     addFile() {
         this.files.push("new file");
+        localStorage.setItems(this.items);
     }
 
     addGame() {
         this.games.push("new game");
+        localStorage.setItems(this.items);
     }
 
     openBrowser() {

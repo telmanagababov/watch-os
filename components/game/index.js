@@ -4,7 +4,8 @@ const GameComponent = {
     templateUrl: "templates/gameTemplate.tmpl",
     controller: GameController,
     bindings: {
-        caption: "<"
+        caption: "<",
+        onRemove: "&"
     }
 };
 
