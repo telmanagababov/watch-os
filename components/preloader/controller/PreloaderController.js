@@ -58,7 +58,7 @@ class PreloaderController {
         return new Promise(resolve => {
             this.preloader.classList.add(FADE_CLASS);
             this.$scope.$apply(
-                this.onLoadingChange({$event: {loading: false}})
+                this.state.loading = false
             );
             setTimeout(() => resolve(), FADE_DURATION);
         });

@@ -9,8 +9,12 @@ class MainController {
     }
 
     _init() {
-        this.version = "1.0";
-        this.loading = true;
+        this.info = {
+            version: "1.0"
+        };
+        this.state = {
+            loading: true
+        };
         this.items = localStorage.getItems();
     }
 

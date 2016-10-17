@@ -4,7 +4,7 @@ const PanelComponent = {
     templateUrl: "templates/panelTemplate.tmpl",
     controller: PanelController,
     bindings: {
-        loading: "<",
+        state: "<",
         items: "<"
     }
 };

@@ -8,11 +8,12 @@
 
 
 <body id="wrapper" ng-controller="Main as ctrl">
-    <preloader version="ctrl.version" on-loading-change="ctrl.loading = $event.loading">
+    <preloader state="ctrl.state" info="ctrl.info" >
     </preloader>
-    <content loading="ctrl.loading" items="ctrl.items">
+    <content state="ctrl.state" items="ctrl.items">
     </content>
-    <panel loading="ctrl.loading" items="ctrl.items">
+    <widget widgets="ctrl.widgets"></widget>
+    <panel state="ctrl.loading" items="ctrl.items">
     </panel>
 </body>
 
