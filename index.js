@@ -5,6 +5,8 @@ import PanelComponent from "./components/panel/index";
 import FolderComponent from "./components/folder/index";
 import FileComponent from "./components/file/index";
 import GameComponent from "./components/game/index";
+import WidgetComponent from "./components/widget/index";
+import SettingsComponent from "./components/settings/index";
 
 angular.module("watchos", [])
     .controller("Main", MainController)
@@ -13,4 +15,6 @@ angular.module("watchos", [])
     .component("panel", PanelComponent)
     .component("folder", FolderComponent)
     .component("file", FileComponent)
-    .component("game", GameComponent);
+    .component("game", GameComponent)
+    .component("widget", WidgetComponent)
+    .component("settings", SettingsComponent);

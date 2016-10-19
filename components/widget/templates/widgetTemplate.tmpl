@@ -1,0 +1,4 @@
+<div id="widget" ng-if="$ctrl.widgets.active !== null">
+    <button class="close-button" data-ng-click="$ctrl.close()"></button>
+    <settings ng-if="$ctrl.widgets.active === $ctrl.widgetTypes.SETTINGS" state="$ctrl.state"></settings>
+</div>

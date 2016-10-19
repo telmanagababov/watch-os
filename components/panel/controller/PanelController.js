@@ -1,4 +1,7 @@
+import { soundManager } from "./../../../utils/SoundManager";
 import localStorage from "./../../../utils/LocalStorage";
+import widgetTypes from "./../../widget/enum/WidgetTypes";
+import defaultIconCaptions from "../enum/DefaultIconCaptions";
 
 class PanelController {
 
@@ -12,30 +15,48 @@ class PanelController {
     }
 
     addFolder() {
-        this.folders.push("new folder");
+        this.folders.push(defaultIconCaptions.FOLDER);
+        soundManager.playClickSound();
         localStorage.setItems(this.items);
     }
 
     addFile() {
-        this.files.push("new file");
+        this.files.push(defaultIconCaptions.FILE);
+        soundManager.playClickSound();
         localStorage.setItems(this.items);
     }
 
     addGame() {
-        this.games.push("new game");
+        this.games.push(defaultIconCaptions.GAME);
+        soundManager.playClickSound();
         localStorage.setItems(this.items);
     }
 
     openBrowser() {
-
+        if(this.widgets.active === widgetTypes.BROWSER) {
+            this.widgets.active = null;
+        } else {
+            this.widgets.active = widgetTypes.BROWSER;
+        }
+        soundManager.playClickSound();
     }
 
     openYoutube() {
-
+        if(this.widgets.active === widgetTypes.YOUTUBE) {
+            this.widgets.active = null;
+        } else {
+            this.widgets.active = widgetTypes.YOUTUBE;
+        }
+        soundManager.playClickSound();
     }
 
     openSettings() {
-
+        if(this.widgets.active === widgetTypes.SETTINGS) {
+            this.widgets.active = null;
+        } else {
+            this.widgets.active = widgetTypes.SETTINGS;
+        }
+        soundManager.playClickSound();
     }
 }
 

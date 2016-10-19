@@ -10,6 +10,7 @@ module.exports = function (grunt) {
         copy: {
             development: {
                 files: [
+                    {expand: true, flatten: true, src: ["assets/**/*.wav"], dest: "dist/assets", filter: "isFile"},
                     {expand: true, flatten: true, src: ["components/**/*.jpg"], dest: "dist/assets", filter: "isFile"},
                     {expand: true, flatten: true, src: ["components/**/*.png"], dest: "dist/assets", filter: "isFile"},
                     {expand: true, flatten: true, src: ["components/**/*.ico"], dest: "dist/assets", filter: "isFile"},

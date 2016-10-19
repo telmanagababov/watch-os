@@ -5,7 +5,8 @@ const PanelComponent = {
     controller: PanelController,
     bindings: {
         state: "<",
-        items: "<"
+        items: "<",
+        widgets: "<"
     }
 };
 

@@ -6,17 +6,12 @@
     <link rel="stylesheet" href="assets/main.css">
 </head>
 
-
 <body id="wrapper" ng-controller="Main as ctrl">
-    <preloader state="ctrl.state" info="ctrl.info" >
-    </preloader>
-    <content state="ctrl.state" items="ctrl.items">
-    </content>
-    <widget widgets="ctrl.widgets"></widget>
-    <panel state="ctrl.loading" items="ctrl.items">
-    </panel>
+    <preloader state="ctrl.state" info="ctrl.info" ></preloader>
+    <content state="ctrl.state" items="ctrl.items"></content>
+    <widget state="ctrl.state" widgets="ctrl.widgets"></widget>
+    <panel state="ctrl.loading" items="ctrl.items" widgets="ctrl.widgets"></panel>
 </body>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
 <script src="script/main.js"></script>

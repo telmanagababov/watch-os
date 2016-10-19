@@ -1,3 +1,4 @@
+import { soundManager } from "./../../../utils/SoundManager";
 import localStorage from "./../../../utils/LocalStorage";
 
 class ContentController {
@@ -14,16 +15,19 @@ class ContentController {
     removeFolder(index) {
         this.folders.splice(index, 1);
         localStorage.setItems(this.items);
+        soundManager.playClickSound();
     }
 
     removeFile(index) {
         this.files.splice(index, 1);
         localStorage.setItems(this.items);
+        soundManager.playClickSound();
     }
 
     removeGame(index) {
         this.games.splice(index, 1);
         localStorage.setItems(this.items);
+        soundManager.playClickSound();
     }
 }
 
