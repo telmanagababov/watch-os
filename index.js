@@ -15,6 +15,8 @@ import GameCreatorComponent from "./components/widgets/gameCreator/index";
 import GameComponent from "./components/widgets/game/index";
 import BrowserComponent from "./components/widgets/browser/index";
 import YoutubeComponent from "./components/widgets/youtube/index";
+import FolderComponent from "./components/widgets/folder/index";
+import FileComponent from "./components/widgets/file/index";
 
 angular.module("watchos", [])
     .controller("Main", MainController)
@@ -30,4 +32,6 @@ angular.module("watchos", [])
     .component("gameCreator", GameCreatorComponent)
     .component("game", GameComponent)
     .component("browser", BrowserComponent)
-    .component("youtube", YoutubeComponent);
+    .component("youtube", YoutubeComponent)
+    .component("folder", FolderComponent)
+    .component("file", FileComponent);

@@ -3,5 +3,7 @@ export default {
     GAME_CREATOR: "gameCreator",
     YOUTUBE: "youtube",
     BROWSER: "browser",
-    SETTINGS: "settings"
+    SETTINGS: "settings",
+    FOLDER: "folder",
+    FILE: "file"
 };

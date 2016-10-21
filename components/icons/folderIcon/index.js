@@ -5,6 +5,7 @@ const FolderIconComponent = {
     controller: FolderIconController,
     bindings: {
         caption: "<",
+        widgets: "<",
         onRemove: "&"
     }
 };

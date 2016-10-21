@@ -5,6 +5,7 @@ const FileIconComponent = {
     controller: FileIconController,
     bindings: {
         caption: "<",
+        widgets: "<",
         onRemove: "&"
     }
 };

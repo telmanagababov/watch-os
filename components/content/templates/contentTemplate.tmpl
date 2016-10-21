@@ -3,12 +3,14 @@
         <folder-icon data-ng-repeat="folder in $ctrl.items.folders track by $index"
                 class="item"
                 on-remove="$ctrl.removeFolder($index)"
-                caption="folder">
+                caption="folder"
+                widgets="$ctrl.widgets">>
         </folder-icon>
         <file-icon data-ng-repeat="file in $ctrl.items.files track by $index"
               class="item"
               on-remove="$ctrl.removeFile($index)"
-              caption="file">
+              caption="file"
+              widgets="$ctrl.widgets">>
         </file-icon>
         <game-icon data-ng-repeat="game in $ctrl.items.games track by $index"
               class="item"
