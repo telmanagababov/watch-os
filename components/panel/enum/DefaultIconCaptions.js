@@ -1,5 +1,5 @@
 export default {
-    FOLDER: "new folderIcon",
-    FILE: "new fileIcon",
+    FOLDER: "new folder",
+    FILE: "new file",
     GAME: "new game",
 };
