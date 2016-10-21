@@ -1,19 +1,20 @@
 <div id="content" ng-hide="$ctrl.state.loading">
     <div id="items-container">
-        <folder data-ng-repeat="folder in $ctrl.items.folders track by $index"
+        <folder-icon data-ng-repeat="folder in $ctrl.items.folders track by $index"
                 class="item"
                 on-remove="$ctrl.removeFolder($index)"
                 caption="folder">
-        </folder>
-        <file data-ng-repeat="file in $ctrl.items.files track by $index"
+        </folder-icon>
+        <file-icon data-ng-repeat="file in $ctrl.items.files track by $index"
               class="item"
               on-remove="$ctrl.removeFile($index)"
               caption="file">
-        </file>
-        <game data-ng-repeat="game in $ctrl.items.games track by $index"
+        </file-icon>
+        <game-icon data-ng-repeat="game in $ctrl.items.games track by $index"
               class="item"
               on-remove="$ctrl.removeGame($index)"
-              caption="game">
-        </game>
+              data="game"
+              widgets="$ctrl.widgets">
+        </game-icon>
     </div>
 </div>

@@ -5,7 +5,8 @@ const ContentComponent = {
     controller: ContentController,
     bindings: {
         state: "<",
-        items: "<"
+        items: "<",
+        widgets: "<"
     }
 };
 

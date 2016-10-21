@@ -1,6 +1,6 @@
 import { soundManager } from "./../../../utils/SoundManager";
 import localStorage from "./../../../utils/LocalStorage";
-import widgetTypes from "./../../widget/enum/WidgetTypes";
+import widgetTypes from "../../widgets/enum/WidgetTypes";
 import defaultIconCaptions from "../enum/DefaultIconCaptions";
 
 class PanelController {
@@ -27,9 +27,12 @@ class PanelController {
     }
 
     addGame() {
-        this.games.push(defaultIconCaptions.GAME);
+        if(this.widgets.active === widgetTypes.GAME_CREATOR) {
+            this.widgets.active = null;
+        } else {
+            this.widgets.active = widgetTypes.GAME_CREATOR;
+        }
         soundManager.playClickSound();
-        localStorage.setItems(this.items);
     }
 
     openBrowser() {

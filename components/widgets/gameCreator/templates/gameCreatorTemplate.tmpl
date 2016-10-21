@@ -1,0 +1,14 @@
+<div id="game-creator">
+    <label for="game-creator-select">Chose a game</label>
+    <select id="game-creator-select"
+            data-ng-model="$ctrl.selectedGame"
+            data-ng-click="$ctrl.playClickSound()"
+            data-ng-change="$ctrl.playClickSound()">
+        <option data-ng-repeat="game in $ctrl.availableGames" value="{{game.type}}">{{game.name}}</option>
+    </select>
+    <button id="game-creator-confirm"
+            data-ng-click="$ctrl.addGame($ctrl.selectedGame)"
+            data-ng-disabled="$ctrl.selectedGame === null">
+        Ok
+    </button>
+</div>

@@ -1,0 +1,34 @@
+#game-creator {
+  width: 275px;
+  text-align: center;
+
+  label {
+    color: #f9cf25;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px #000;
+  }
+
+  select,
+  button {
+    height: 38px;
+    margin: 20px;
+    font-size: 20px;
+    color: #b91d1d;
+    border-radius: 4px;
+    box-shadow: 0 0 8px 2px #fff;
+    cursor: pointer;
+  }
+
+  #game-creator-select {
+    width: 200px;
+  }
+
+  #game-creator-confirm {
+    width: 80px;
+
+    &:disabled {
+      cursor: default;
+      color: #000;
+    }
+  }
+}

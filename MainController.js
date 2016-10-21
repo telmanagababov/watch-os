@@ -19,7 +19,8 @@ class MainController {
             sounds: localStorage.getSoundState()
         };
         this.widgets = {
-            active: null
+            active: null,
+            data: null
         };
         this.items = localStorage.getItems();
     }

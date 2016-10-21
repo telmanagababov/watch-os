@@ -8,12 +8,13 @@
 
 <body id="wrapper" ng-controller="Main as ctrl">
     <preloader state="ctrl.state" info="ctrl.info" ></preloader>
-    <content state="ctrl.state" items="ctrl.items"></content>
-    <widget state="ctrl.state" widgets="ctrl.widgets"></widget>
+    <content state="ctrl.state" items="ctrl.items" widgets="ctrl.widgets"></content>
+    <widget-container state="ctrl.state" items="ctrl.items" widgets="ctrl.widgets"></widget-container>
     <panel state="ctrl.loading" items="ctrl.items" widgets="ctrl.widgets"></panel>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+<script src="//static.miniclipcdn.com/js/game-embed.js"></script>
 <script src="script/main.js"></script>
 
 </html>

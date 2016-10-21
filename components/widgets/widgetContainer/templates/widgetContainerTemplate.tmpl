@@ -1,0 +1,17 @@
+<div id="widget" ng-if="$ctrl.widgets.active !== null">
+    <button class="close-button" data-ng-click="$ctrl.close()"></button>
+    <settings-panel ng-if="$ctrl.widgets.active === $ctrl.widgetTypes.SETTINGS"
+            state="$ctrl.state">
+    </settings-panel>
+    <game-creator ng-if="$ctrl.widgets.active === $ctrl.widgetTypes.GAME_CREATOR"
+            items="$ctrl.items"
+            widgets="$ctrl.widgets">
+    </game-creator>
+    <game ng-if="$ctrl.widgets.active === $ctrl.widgetTypes.GAME"
+            data="$ctrl.widgets.data">
+    </game>
+    <browser ng-if="$ctrl.widgets.active === $ctrl.widgetTypes.BROWSER">
+    </browser>
+    <youtube ng-if="$ctrl.widgets.active === $ctrl.widgetTypes.YOUTUBE">
+    </youtube>
+</div>

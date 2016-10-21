@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//static.miniclipcdn.com/js/game-embed.js"></script>
+</head>
+<body>
+    <script>
+        function handleClick() {
+            let gameArea = document.querySelector("#game-area");
+            gameArea.innerHTML = '<div class="miniclip-game-embed"' +
+                'data-game-name="super-soccer-noggins"' +
+                'data-theme="0"' +
+                'data-height="400"' +
+                'data-width="600"' +
+                'data-language="en">' +
+            '</div>';
+            build_miniclip_game();
+        }
+    </script>
+    <div id="game-area"></div>
+    <button onclick="handleClick()">CLICK</button>
+</body>
+</html>
